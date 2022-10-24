@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let diem1 = +prompt("Nhập điểm kiểm tra:");
+    let diem2 = +prompt("Nhập điểm giữa kỳ:");
+    let diem3 = +prompt("Nhập điểm cuối kỳ:");
+
+    let diemtong = (diem1 + diem2*2 + diem3*3)/6
+
+    if (diemtong >= 9.5 && diemtong <= 10)
+    {
+        document.write("Hoc sinh xuat sac");
+    }
+    else if (diemtong >= 8 && diemtong <= 9)
+    {
+        document.write("Hoc sinh gioi");
+    }
+    else if (diemtong >= 6 && diemtong <= 7.9)
+    {
+        document.write("Hoc sinh kha");
+    }
+    else if (diemtong >= 4 && diemtong <= 5.9)
+    {
+        document.write("Hoc sinh trung binh");
+    }
+    else
+    {
+        document.write("Hoc sinh yeu");
+    }
+</script>
+</html>

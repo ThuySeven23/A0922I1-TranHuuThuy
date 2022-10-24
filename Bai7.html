@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let sophut = +prompt("Nhập số phút đã gọi: ");
+    let tienphi;
+    if (sophut >= 300)
+    {
+        tienphi = sophut * 500;
+    }
+    else if (sophut >= 100 && sophut <= 250)
+    {
+        tienphi = (sophut-50) * 500;
+    }
+    else
+    {
+        tienphi = sophut*300;
+    }
+    document.write("So tien phai tra la: " + tienphi);
+</script>
+
+</html>
