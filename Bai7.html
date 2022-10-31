@@ -2,28 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bài 7</title>
 </head>
-
 <body>
-
-</body>
 <script>
-    let sophut = +prompt("Nhập số phút đã gọi: ");
-    let tienphi;
-    if (sophut >= 300)
-    {
-        tienphi = sophut * 500;
-    }
-    else if (sophut >= 100 && sophut <= 250)
-    {
-        tienphi = (sophut-50) * 500;
-    }
-    else
-    {
-        tienphi = sophut*300;
-    }
-    document.write("So tien phai tra la: " + tienphi);
-</script>
+    for (let i = 1; i <= 100 ; i++) {
+        if (i % 3 === 0)
+        {
+            document.write("<b> (+) </b> " + i + " " + "<br>");
+            document.write(" Fizz <br>");
 
+        }
+        else if (i % 5 === 0)
+        {
+            document.write("<b>(+)</b> " + i + " " + "<br>");
+            document.write("Buzz <br>");
+        }
+        else if (i % 3 === 0 && i % 5 === 0)
+        {
+            document.write("<b>(+)</b> " + i + " " + "<br>");
+            document.write("FizzBuzz <br>");
+
+        }
+        else
+        {
+            document.write("<b>(+) </b> " + i + " " + "<br>");
+            document.write("-> Không chia hết 3 và 5!! <br>");
+        }
+    }
+
+</script>
+</body>
 </html>
