@@ -14,28 +14,25 @@
 
 </form>
 <script>
-    let count = 0;
-    let TA = ["technology" , "software" , "data" , "control" , "development" , "security"]
-    let TV =  ["Công nghệ" , "Phần mềm" , "Dữ liệu" , "Kiểm soát" , "Phát triển" , "An ninh"]
-    document.write("<br>" + "-->Chỉ có thể dịch được các từ : (" + TA.join(" , ") + ")")
+     
+    let tiengAnh = ["technology" , "software" , "data" , "control" , "development" , "security"]
+    let tiengViet =  ["Công nghệ" , "Phần mềm" , "Dữ liệu" , "Kiểm soát" , "Phát triển" , "An ninh"]
+    document.write("<br>" + "--> Chỉ có thể dịch được các từ : (" + tiengAnh.join(" , ") + ")")
 
     function dich() {
-        for (let i = 0; i < TA.length; i++)
-        {
-            if (TA[i] === text.value)
-            {
-                count = 0;
-                document.getElementById("vietnam").innerHTML = TV[i];
-                break;
-            } else {
-                count++;
-            }
-        }
-        if (count !== 0) {
-            alert("Khong tim thay !!!");
-        }
-
+        
+     let indexOf = tiengAnh.indexOf(text.value);
+     if (indexOf > 0)
+     {
+         document.getElementById("vietnam").innerHTML = tiengViet[indexOf];
+     }
+     else
+     {
+         document.getElementById("vietnam").innerHTML = "Khong tim thay !!!";
+     }
+        
     }
+
 
 </script>
 </body>
